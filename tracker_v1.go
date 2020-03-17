@@ -5,7 +5,7 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"github.com/0xjiayu/DDGBotnetTracker"
+	"github.com/0xjiayu/DDGBotnetTracker/pkg"
 	"io"
 	"io/ioutil"
 	"log"
