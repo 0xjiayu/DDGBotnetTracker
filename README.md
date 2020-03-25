@@ -24,9 +24,13 @@ Track DDG.Botnet via P2P Protocol. Refer:
 
 ### 2.2 dependencies
 
-以前我写这套源码时，只是简单地写了可运行的程序，没有标准的 Go 源码工程里常有的 `*_test.go` 文件（即没有进行标准流程的测试）。也没有管理依赖，没有创建 **go.mod** 文件。
+项目中引用的第三方 Package 都已经在 **go.mod** 文件中指定了，所以用支持 Go Modules 的 Go 版本，在主目录下直接运行以下命令即可编译：
 
-所以，编译、运行之前，请自己根据各源码文件里的 import list 手动下载、安装需要的第三方 Libraries。
+```
+$go build -ldflags "-s -w" tracker_v1.go
+```
+
+当然，直接 `$go run tracker_v1.go` 也可以运行起来。
 
 ### 2.3 源码中用到的个性化常量
 
