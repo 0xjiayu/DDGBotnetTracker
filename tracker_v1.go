@@ -5,7 +5,6 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"github.com/0xjiayu/DDGBotnetTracker/pkg"
 	"io"
 	"io/ioutil"
 	"log"
@@ -17,9 +16,10 @@ import (
 	"strconv"
 	"strings"
 	"time"
+	"tracker_v1/lib"
 
-	"github.com/0xjiayu/memberlist"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/hashicorp/memberlist"
 	"github.com/jmoiron/sqlx"
 	"github.com/vmihailenco/msgpack"
 )
