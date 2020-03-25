@@ -39,6 +39,7 @@ $go build -ldflags "-s -w" tracker_v1.go
 - **SLACK_MSG_API**: 在 **util.go** 中，Tracker 程序会将跟踪到的最新动态发送到 Slack 里，这个 API 即是  Slack App 收取信息的 Slack Hook API URL。Slack Web Hooks 官方文档：
 
   https://api.slack.com/messaging/webhooks
+  
   Slack 推送的截图如下：
 
   ![](https://jiayu0x.com/imgs/botnet_tracker_slack_msg.png)
