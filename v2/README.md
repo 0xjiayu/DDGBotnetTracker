@@ -13,6 +13,8 @@ $ ./tracker.elf -s seeds.list
 
 **seeds.list** is a list file contains seed nodes address( `<ip:port>` ) of P2P network, it can extracted from DDG binary sample. Related tools：[**dec_seeds.go**](./tools/dec_seeds.go)
 
+It outputs tracking results to STDOUT, and will take about 130 minutes to finish its tracking job. After finishing tracking, **Tracker.elf** will save all the tracked nodes address to a file named as **nodes_tracked.list**.
+
 File information of **tracker.elf**:
 
 ```
