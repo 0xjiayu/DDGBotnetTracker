@@ -2,6 +2,11 @@
 
 Related data and tools of New Version of DDG P2P minning botnet
 
+**Refer**:
+
+1. [DDG botnet, round X, is there an ending?](https://blog.netlab.360.com/an-update-on-the-ddg-botnet/)
+2. [DDG的新征程——自研P2P协议构建混合P2P网络](https://blog.netlab.360.com/ddg-upgrade-to-new-p2p-hybrid-model/)
+
 ### tracker
 
 **tracker.elf** is a pre-built ELF Binary file, you can just run it as:
