@@ -94,13 +94,13 @@ type BaseOptions struct {
 }
 
 type AAOptions struct {
-	_msgpack  struct{} `msgpack:",omitempty"`
-	NThreads  int
-	Duation   timeout
-	IPDuation timeout
-	GenLan    bool
-	GenAAA    bool
-	Ports     []int
+	_msgpack   struct{} `msgpack:",omitempty"`
+	NThreads   int
+	Duration   string
+	IPDuration string
+	GenLan     bool
+	GenAAA     bool
+	Ports      []int
 }
 
 type timeout struct {
