@@ -4,11 +4,11 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	"github.com/vmihailenco/msgpack"
 	"io/ioutil"
 	"log"
 	"sync"
-	"time"
+
+	"github.com/vmihailenco/msgpack"
 )
 
 const CONFFILE string = "../data/slave_latest.raw"
@@ -101,10 +101,6 @@ type AAOptions struct {
 	GenLan     bool
 	GenAAA     bool
 	Ports      []int
-}
-
-type timeout struct {
-	Duation time.Duration
 }
 
 type result struct {
